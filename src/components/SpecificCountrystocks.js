@@ -634,9 +634,15 @@ const SpecificCountryStocks = () => {
     if (analysisType === 'current' && (!strategy || !amount)) return alert("Provide strategy and amount.");
 
     const countrySymbol = getCountrySymbol(country);
+
+    
     const apiUrl = analysisType === 'current'
-      ? 'http://localhost:5000/current-analysis-national'
-      : 'http://localhost:5000/weekly-analysis-national';
+      ? 'https://muzair-010-stock_analysis.hf.space/current-analysis-national'
+      : 'https://muzair-010-stock_analysis.hf.space/weekly-analysis-national';
+
+    // const apiUrl = analysisType === 'current'
+    //   ? 'http://localhost:5000/current-analysis-national'
+    //   : 'http://localhost:5000/weekly-analysis-national';
 
     const requestData = analysisType === 'current'
       ? { company_stock: stockSymbol, strategy, amount: parseFloat(amount), country_symbol: countrySymbol }

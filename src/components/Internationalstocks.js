@@ -948,10 +948,14 @@ const InternationalStocks = () => {
     }
     setLoading(true);
     setError(null);
-
+    
     const apiUrl = analysisType === 'current'
-      ? 'http://localhost:5000/current-analysis'
-      : 'http://localhost:5000/weekly-analysis';
+      ? 'https://muzair-010-stock_analysis.hf.space/current-analysis'
+      : 'https://muzair-010-stock_analysis.hf.space/weekly-analysis';
+
+    // const apiUrl = analysisType === 'current'
+    //   ? 'http://localhost:5000/current-analysis'
+    //   : 'http://localhost:5000/weekly-analysis';
 
     const requestData = analysisType === 'current'
       ? { company_stock: stockSymbol, strategy, amount: parseFloat(amount) }

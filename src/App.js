@@ -132,7 +132,9 @@ function App() {
   useEffect(() => {
     const fetchStocks = async () => {
       try {
-        const response = await fetch('http://localhost:5000/top-stocks');
+        // const response = await fetch('http://localhost:5000/top-stocks');
+        // for locally add this in package.json file "proxy": "http://localhost:5000",
+        const response = await fetch('https://muzair-010-stock_analysis.hf.space/top-stocks');
         const data = await response.json();
         setTopStocks(data.slice(0, 10));
       } catch (error) {

@@ -1,0 +1,16 @@
+{
+    "StockExchanges": [
+      {
+        "Country": "China",
+        "Symbol": "SSE"
+      },
+      {
+        "Country": "India",
+        "Symbol": "NSE"
+      },
+      {
+        "Country": "Pakistan",
+        "Symbol": "PSX"
+      }
+    ]
+}

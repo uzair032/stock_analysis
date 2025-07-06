@@ -637,8 +637,8 @@ const SpecificCountryStocks = () => {
 
     
     const apiUrl = analysisType === 'current'
-      ? 'https://muzair-010-stock_analysis.hf.space/current-analysis-national'
-      : 'https://muzair-010-stock_analysis.hf.space/weekly-analysis-national';
+      ? 'https://huggingface.co/spaces/muzair-010/stock_analysis/current-analysis-national'
+      : 'https://huggingface.co/spaces/muzair-010/stock_analysis/weekly-analysis-national';
 
     // const apiUrl = analysisType === 'current'
     //   ? 'http://localhost:5000/current-analysis-national'

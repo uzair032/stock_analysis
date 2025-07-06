@@ -950,8 +950,8 @@ const InternationalStocks = () => {
     setError(null);
     
     const apiUrl = analysisType === 'current'
-      ? 'https://muzair-010-stock_analysis.hf.space/current-analysis'
-      : 'https://muzair-010-stock_analysis.hf.space/weekly-analysis';
+      ? 'https://huggingface.co/spaces/muzair-010/stock_analysis/current-analysis'
+      : 'https://huggingface.co/spaces/muzair-010/stock_analysis/weekly-analysis';
 
     // const apiUrl = analysisType === 'current'
     //   ? 'http://localhost:5000/current-analysis'
